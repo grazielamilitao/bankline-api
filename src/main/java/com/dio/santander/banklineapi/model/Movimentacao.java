@@ -2,11 +2,21 @@ package com.dio.santander.banklineapi.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="tab_movimentacao")
 public class Movimentacao {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private LocalDateTime data;
+	@Column (name = "data_hora")
+	private LocalDateTime dataHora;
+	
 	private String descricao;
 	private double valor;
+	
+	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
 	
 	public int getId() {
@@ -16,10 +26,10 @@ public class Movimentacao {
 		this.id = id;
 	}
 	public LocalDateTime getData() {
-		return data;
+		return dataHora;
 	}
-	public void setData(LocalDateTime data) {
-		this.data = data;
+	public void setData(LocalDateTime dataHora) {
+		this.dataHora = dataHora;
 	}
 	public String getDescricao() {
 		return descricao;
