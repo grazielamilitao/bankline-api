@@ -1,7 +1,6 @@
 package com.dio.santander.banklineapi.model;
 
 import java.time.LocalDateTime;
-
 import javax.persistence.*;
 
 @Entity
