@@ -1,14 +1,14 @@
-package com.dio.santander.controller;
+package com.dio.santander.bankline.api.controller;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.dio.santander.bankline.api.controller.NovoCorrentista;
+import com.dio.santander.bankline.api.dto.NovoCorrentista;
 import com.dio.santander.bankline.api.service.CorrentistaService;
-import com.dio.santander.banklineapi.model.Correntista;
-import com.dio.santander.repository.CorrentistaRepository;
+import com.dio.santander.bankline.api.repository.CorrentistaRepository;
+import com.dio.santander.bankline.api.model.Correntista;
 
 @RestController
 @RequestMapping("/correntistas")

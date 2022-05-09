@@ -1,4 +1,4 @@
-package com.dio.santander.bankline.api.controller;
+package com.dio.santander.bankline.api.dto;
 
 public class NovoCorrentista {
 	private String nome;

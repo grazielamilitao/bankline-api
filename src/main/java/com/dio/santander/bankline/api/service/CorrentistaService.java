@@ -5,9 +5,9 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dio.santander.bankline.api.controller.NovoCorrentista;
-import com.dio.santander.banklineapi.model.*;
-import com.dio.santander.repository.CorrentistaRepository;
+import com.dio.santander.bankline.api.dto.NovoCorrentista;
+import com.dio.santander.bankline.api.model.*;
+import com.dio.santander.bankline.api.repository.CorrentistaRepository;
 
 @Service
 public class CorrentistaService {
