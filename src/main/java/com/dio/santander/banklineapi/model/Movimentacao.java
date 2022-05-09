@@ -18,6 +18,21 @@ public class Movimentacao {
 	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
 	
+	@Column(name = "id_conta")
+	private int idConta;
+	
+	public LocalDateTime getDataHora() {
+		return dataHora;
+	}
+	public void setDataHora(LocalDateTime dataHora) {
+		this.dataHora = dataHora;
+	}
+	public int getIdConta() {
+		return idConta;
+	}
+	public void setIdConta(int idConta) {
+		this.idConta = idConta;
+	}
 	public int getId() {
 		return id;
 	}
